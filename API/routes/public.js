@@ -13,6 +13,7 @@ router.post("/cadastro", async (req, res) => {
   try {
     const user = req.body;
 
+    //criptografa as senhas
     const salt = await bcrypt.genSalt(10);
     const hashPassword = await bcrypt.hash(user.password, salt);
 

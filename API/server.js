@@ -10,5 +10,3 @@ app.use("/", publicRoutes);
 app.use("/", auth, privateRoutes);
 
 app.listen(3000, () => console.log("Server rodando."));
-
-//mongodb+srv://christopher:<db_password>@users.9zjui.mongodb.net/?retryWrites=true&w=majority&appName=Users

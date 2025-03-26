@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 
+//geração e verificação de token
 const JWT_SECRET = process.env.JWT_SECRET;
 
 const auth = (req, res, next) => {
